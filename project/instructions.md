@@ -3,6 +3,8 @@
 ## Deadline
 
 <!-- Place the date here. -->
+- Ing4 CYB Gr01 (fr): 30/11/2026 at 11:59:59 PM.
+- Ing4 CYB Gr02 (fr): 11/12/2026 at 11:59:59 PM.
 
 ## Opportunities
 
@@ -41,6 +43,7 @@ Configure and apply CI/CD (including deployment) pipeline using any platforms (G
   - database
   - your application (use [sync folders](https://www.vagrantup.com/docs/synced-folders))
   - health check of your application
+3. Launch your application in your browser
 
 ### 4. Build Docker image of your application
 
@@ -61,14 +64,14 @@ Configure and apply CI/CD (including deployment) pipeline using any platforms (G
   - services
   - persistent volume and persistent volume claim
 
-### 7. Make a service mesh using Istio
+### 7. Make a service mesh using Istio (BONUS)
 
 1. Deploy your application using Istio
 2. Create configuration:
   - route requests between 2 different versions of your app
   - traffic shifting between 2 different versions of your app
   
-### 8. Implement Monitoring to your containerized application
+### 8. Implement Monitoring to your containerized application (BONUS)
 
 1. Install Prometheus and Grafana to your K8s cluster
 
@@ -141,42 +144,34 @@ Every initiative will be counted, just don't forget to describe it in your `READ
 
 List of bonus tasks proposed:
 
-1. Use different tools and platforms instead of what has been passed in the labs, for example, GitLab CI/CD, Netlify, etc. This will give you a bigger overview of technologies.
-2. Use different languages (Java, Ruby, Python, etc.) to develop the application of part 1.
-3. If you use the NodeJS application provided in the [modules/04.ct-ci-cd/assets/userapi](modules/04.ct-ci-cd/assets/userapi) folder, bring it with additional features:
-  - more different API methods
-  - more different unit/functional/integration tests
-  - using another database (like MongoDB, MySQL, ...)
-  - integrate a documenting package to your source code, for example, [Swagger UI](https://www.npmjs.com/package/express-swagger-generator)
-4. Any Kubernetes tasks from [this list](https://kubernetes.io/docs/tasks/). 
-5. [Securing microservice communication](https://istio.io/latest/docs/tasks/security/) or any other task with Istio.
+1. Using Prometheus and Grafana to monitor your kubernetes cluster.
+2. Create an [Helm Chart](https://helm.sh/docs/intro/introduction) to deploy your application on kubernetes cluster. 
+3. [Securing microservice communication](https://istio.io/latest/docs/tasks/security/) or any other task with Istio.
 6. Etc.
 
 ## How to send a project for evaluation?
 
 1. **ATTENTION!** Make sure your repository is **PRIVATE** and **you have sent an invitation** to teacher's GitHub account - https://github.com/sergkudinov. Otherwise, **if it isn't PRIVATE the final grade will be reduced to 0**.
 
-2. After you have sent the invitation, send an email to [sergei@adaltas.com](mailto:sergei@adaltas.com) containing the following:
-
-  - **Subject format:** "DSTI - DevOps project - \<LASTNAME Firstname\> - \<Group number (ex: SI03)\>"
-  - **Message:**
-    - **The link to the repository** on GitHub/GitLab
-    - List of authors and **the group number**
+2. Add your teacher as project collaborator:
+  - gr01: octavepre
+  - gr02: alexismarie8314
 
 ## Grading system
 
 | Subject                                                         |   Code    | Max. grade|
 |:----------------------------------------------------------------|:---------:|:---------:|
-| Enriched web application with automated tests                   |   APP     |    +1     |
-| Continuous Integration and Continuous Delivery (and Deployment) |   CICD    |    +3     |
-| Containerisation with Docker                                    |   D       |    +1     |
-| Orchestration with Docker Compose                               |   DC      |    +2     |
-| Orchestration with Kubernetes	                                  |   KUB     |    +3     |
-| Service mesh using Istio                                        |   IST     |    +2     |
+| Correct use of Git                                              |   SMC     |    +3     |
+| Enriched web application with automated tests                   |   TDD     |    +2     |
+| Continuous Integration and Continuous Delivery (and Deployment) |   CICD    |    +2     |
+| Containerisation with Docker and upload to DockerHub            |   D       |    +2     |
+| Orchestration with Docker Compose                               |   DC      |    +1     |
+| Orchestration with Kubernetes	                                  |   KUB     |    +2     |
 | Infrastructure as code using Ansible                            |   IAC     |    +3     |
-| Monitoring                                                      |   MON     |    +2     |
 | Accurate project documentation in README.md file                |   DOC     |    +3     |
-| Each bonus task                                                 |   BNS     |    +1     |
+| Service mesh using Istio (BONUS)                                |   IST     |    +1     |
+| Monitoring (BONUS)                                              |   MON     |    +1     |
+| Helm Integration (BONUS)                                        |   HLM     |    +1     |
 | Each penalty                                                    |   PNL     |    -1     |
 
 It is also taken into account:
